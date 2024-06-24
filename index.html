@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Senha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icone.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>JOGO DA SENHA</h1>
+    </header>
+    <main>
+        <div id="interface">
+            <div id="inputContainer">
+                <input type="text" name="" id="input" minlength="4" maxlength="4" autocomplete="off" placeholder="Palpite">
+            </div>
+            <div id="containerBotao">
+                <button onclick="pegarValor()" id="enviar">Enviar</button>
+            </div>
+            <h1 id="corretos"></h1>
+        </div>
+        <button id="showMenu" onclick="showMenu()">&lt;-</button>
+        <div id="tentsAnt">
+            <div>
+                <h2>Tentativas anteriores</h2>
+            </div>
+            <div id="tentContent">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Jogo feito por <a href="http://github.com/TiagoCitranguloDaSilva" target="_blank">Tiago Citrangulo da Silva</a></p>
+    </footer>
+    <script src="code.js"></script>
+</body>
+</html>

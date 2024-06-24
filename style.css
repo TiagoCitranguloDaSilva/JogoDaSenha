@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --corBody: #1b222e;
+    --corHeader: #242e3e;
+    --corMain: transparent;
+    --corFooter: #242e3e;
+    --corInterface: #2d3a4e;
+    --corTentsAnt: #364358;
+    --corAreaPalpite: #344053;
+}
+
+body{
+    background-color: var(--corBody);
+    display: grid;
+    grid-template-rows: 1fr 5fr 40px;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: var(--corHeader);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 1.8em;
+    color: lightgray;
+    text-align: center;
+}
+
+main{
+    background-color: var(--corMain);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#interface{
+    background-color: var(--corInterface);
+    height: 90%;
+    width: 400px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 40px 20px;
+}
+
+#inputContainer{
+    background-color: var(--corAreaPalpite);
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#input{
+    width: 90%;
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    background-color: #bebebe;
+    appearance: none;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#showMenu{
+    position: absolute;
+    right: 0px;
+    background-color: rgb(30, 30, 54);
+    width: 40px;
+    height: 70px;
+    border-radius: 15px 0 0 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid rgb(83, 83, 83);
+    border-right: none;
+}
+
+#containerBotao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#enviar{
+    width: 120px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .18);
+    background-color: rgb(58, 65, 65);
+    display: block;
+    color: rgb(199, 199, 199);
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+#corretos{
+    text-align: center;
+    color: lightgray;
+}
+
+#tentsAnt{
+    position: absolute;
+    right: 0;
+    display: none;
+    background-color: var(--corTentsAnt);
+    height: 95%;
+    width: 200px;
+    border-radius: 5px 0px 0px 5px;
+    border: 4px solid #252741;
+    color: lightgray;
+    overflow-y: auto;
+}
+
+#tentsAnt h2{
+    text-align: center;
+    border: 3px solid #252741;
+    border-radius: 2px 0 0 0;
+    border-left: none;
+    border-right: none;
+}
+
+.card{
+    text-align: center;
+    border: 2px solid #252741;
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+}
+
+footer{
+    background-color: var(--corFooter);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    color: lightgray;
+}
+
+a{
+    color: white;
+}
